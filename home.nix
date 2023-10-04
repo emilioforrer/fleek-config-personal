@@ -22,6 +22,7 @@
     # user selected packages
     pkgs.helix
     pkgs.spotify
+    pkgs.devbox
     # Fleek Bling
     pkgs.git
     pkgs.htop
