@@ -5,7 +5,4 @@
      echo "Init devbox global"
      eval "$(devbox global shellenv)"
   '';
-  fonts.packages = with pkgs; [
-    (nerdfonts.override { fonts = [ "FiraCode" "DroidSansMono" ]; })
-  ];
 }
