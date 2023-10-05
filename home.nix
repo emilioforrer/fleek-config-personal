@@ -23,8 +23,6 @@
     pkgs.helix
     pkgs.spotify
     pkgs.devbox
-    pkgs.docker-compose
-    pkgs.docker
     # Fleek Bling
     pkgs.git
     pkgs.htop
