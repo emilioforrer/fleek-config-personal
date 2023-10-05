@@ -21,6 +21,7 @@ packages:
     - helix
     - spotify
     - devbox
+    - docker-compose
 paths:
     - $HOME/bin
     - $HOME/.local/bin
