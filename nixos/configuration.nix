@@ -8,7 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-    ];
+      #/home/developer/.local/share/fleek/nixos/configuration.nix
+     ];
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
@@ -98,8 +99,8 @@
   environment.systemPackages = with pkgs; [
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
   #  wget
-  docker
-  docker-compose
+  #docker
+  #docker-compose
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
@@ -129,6 +130,10 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "23.05"; # Did you read the comment?
   
+
+  # CUSTOM CONFIG
+  # -----------------------------------------------------------------
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   users.groups.docker = {};
   virtualisation.docker.enable = true;                                                                                                                                                                                                                                                                                                              
@@ -143,6 +148,7 @@
   #];
 
   security.sudo.enable =  true;
+  
   # Allow members of the "wheel" group to sudo:
   security.sudo.configFile = ''
     %wheel ALL=(ALL) ALL
