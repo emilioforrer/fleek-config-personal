@@ -4,5 +4,9 @@
   programs.bash.initExtra =  ''
      echo "Init devbox global"
      eval "$(devbox global shellenv)"
+     # atuin import auto
+     # eval "$(zoxide init bash)"
+     # eval "$(direnv hook bash)"
+     # eval "$(starship init bash)"
   '';
 }
